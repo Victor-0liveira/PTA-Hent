@@ -1,37 +1,61 @@
+import { url } from "inspector";
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  padding-left: 142px;
+  margin-top: 55px;
+`;
+
+export const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+`;
+export const HeadH1 = styled.p`
+  color: ${(props) => props.theme.colors.TitleHeader};
+  font-weight: 500;
+  font-size: 45px;
+  font-style: Dm Sans;
+`;
+
+export const Options = styled.div`
+  display: flex;
+  gap: 67px;
+  align-items: center;
+`;
+export const Text = styled.text`
+  font-weight: 700;
+  font: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  gap: 67px;
+  text-decoration: none;
+`;
 
-  h1 {
-    font-size: 54px;
-    color: ${(props) => props.theme.colors.primary};
-    margin-top: 40px;
-    text-align: center;
+export const List = styled.datalist`
+  display: flex;
+  gap: 67px;
+  list-style-type: none;
+`;
+export const a = styled.link`
+  text-decoration: none;
+`;
+export const HeadButton = styled.button`
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 62px;
+  padding-right: 62px;
+  background-color: #3a4cf1;
+  border-radius: 10px;
+  border: none;
+`;
 
-    @media (max-width: 720px) {
-      font-size: 28px;
-    }
-  }
-
-  p {
-    font-size: 20px;
-    margin-top: 24px;
-    line-height: 32px;
-
-    @media (max-width: 720px) {
-      font-size: 16px;
-      margin-top: 0;
-    }
-  }
-
-  img {
-    width: 25%;
-  }
+export const ButtonText = styled.text`
+  color: white;
 `;

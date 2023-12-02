@@ -1,16 +1,28 @@
 import React from "react";
-import { HomeContainer } from "./style";
-import { LogoCITi } from "../assets";
+import { Header, HeadH1, Logo, Options, Text, List, HeadButton, ButtonText } from "./style";
+import { Hent } from "../assets";
 
-export default function Home() {
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet"></link>
+
+export default function heading() {
   return (
-    <HomeContainer>
-      <img src={LogoCITi.src} alt="" />
-      <h1>Next.js Boilerplate</h1>
-      <p>
-        Made with <strong>&lt; &#x0002F; &gt;</strong> and{" "}
-        <strong>&hearts;</strong> by CITi
-      </p>
-    </HomeContainer>
+    <Header>
+      <Options>
+      <Logo>
+      <img src={ Hent.src } alt="" />
+      <HeadH1>hent</HeadH1>
+      </Logo>
+      <List>
+      <Text>  Quem Somos </Text>
+      <Text> Como Funciona </Text>
+      <Text> Serviços  </Text>
+      
+      </List>
+    
+      </Options>
+     <HeadButton>
+      <ButtonText>Acesse a HentSign</ButtonText>
+      </HeadButton>
+    </Header>
   );
 }

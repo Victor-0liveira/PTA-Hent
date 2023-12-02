@@ -1,7 +1,9 @@
 export default {
   colors: {
-    background: "#292929",
-    primary: "#e1e1e6",
-    text: "#e1e1e6",
+    background: "#FFFFFF",
+
+    TitleHeader: "#666666",
+    headerNavBar: "#1A1A1A",
+    primary: "#3A4CF1",
   },
 };
